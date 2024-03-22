@@ -1,0 +1,34 @@
+#######
+#
+# foundations-data
+# basic template for Jekyll with GitHub Pages
+# https://github.com/learn-static/foundations-data
+#
+#######
+
+#######
+# SITE SETTINGS
+#
+title: foundations-data
+description: ""
+year: 2021
+author: learn-static
+
+##########
+# location of code, the full url to your github repository
+source-code: https://github.com/learn-static/foundations-data
+
+#######
+# BUILD SETTINGS [usually leave as is]
+#
+# Defaults to simplify front matter,
+# all files in the "pages" folder will be output at root of site
+defaults:
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+      permalink: /:basename:output_ext
+
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]
